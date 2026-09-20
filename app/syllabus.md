@@ -81,6 +81,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 ### Lecture 5 — The nature of Web Videos and Challenges in Using them
 
+**Lecture Slides**
+
+- [Lecture 5 slides (PDF)](/lecture5.html)
+
 **Related Readings**
 
 - **[R]** Grauman et al., [Ego4D: Around the World in 3,000 Hours of Egocentric Video](https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html), CVPR 2022.
@@ -90,6 +94,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 - **[P]** Chen et al., [Action100M: A Large-scale Video Action Dataset](https://arxiv.org/abs/2601.10592), 2026.
 
 ### Lecture 6 — Behavioral Priors, self-supervised video representation learning, active exploration
+
+**Lecture Slides**
+
+- [Lecture 6 slides (PDF)](/lecture6.html)
 
 **Reading After Class**
 

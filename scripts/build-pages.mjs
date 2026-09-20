@@ -68,6 +68,8 @@ for (const filename of [
   "lecture1.html",
   "lecture2.pdf",
   "lecture3.html",
+  "lecture5.html",
+  "lecture6.html",
   "og.png",
   "university.shield.rgb.blue.png",
 ]) {
@@ -79,6 +81,11 @@ await rm(join(root, "lecture1-parts"), { force: true, recursive: true });
 await cp(join(pagesDir, "lecture1-parts-b64"), rootLecture1PartsDir, { recursive: true });
 await rm(rootLecture3PartsDir, { force: true, recursive: true });
 await cp(join(pagesDir, "lecture3-parts-b64"), rootLecture3PartsDir, { recursive: true });
+
+for (const lecture of [5, 6]) {
+  const partsDir = `lecture${lecture}-parts-b64`;
+  await cp(join(pagesDir, partsDir), join(root, partsDir), { recursive: true });
+}
 
 await Promise.all([
   writeFile(join(root, "index.html"), html),

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { createHash } from "node:crypto";
 import { readFile, readdir } from "node:fs/promises";
 import test from "node:test";
 
@@ -61,6 +62,8 @@ test("server-renders the complete course outline", async () => {
   assert.match(html, /href="\/lecture1\.html"[^>]*>Lecture 1 slides \(PDF\)/);
   assert.match(html, /href="\/lecture2\.pdf"[^>]*>Lecture 2 slides \(PDF\)/);
   assert.match(html, /href="\/lecture3\.html"[^>]*>Lecture 3 slides \(PDF\)/);
+  assert.match(html, /href="\/lecture5\.html"[^>]*>Lecture 5 slides \(PDF\)/);
+  assert.match(html, /href="\/lecture6\.html"[^>]*>Lecture 6 slides \(PDF\)/);
   assert.match(html, /Reading After Class/);
   assert.match(html, /Rational Imitation in Preverbal Infants/);
   assert.match(html, /TrackCraft3R: Repurposing Video Diffusion Transformers for Dense 3D Tracking/);
@@ -135,6 +138,8 @@ test("publishes the full site from the repository root for GitHub Pages", async 
   assert.match(rootHtml, /href="\.\/lecture1\.html"/);
   assert.match(rootHtml, /href="\.\/lecture2\.pdf"/);
   assert.match(rootHtml, /href="\.\/lecture3\.html"/);
+  assert.match(rootHtml, /href="\.\/lecture5\.html"/);
+  assert.match(rootHtml, /href="\.\/lecture6\.html"/);
   assert.doesNotMatch(rootHtml, /<h1>embodied-ai-with-videos<\/h1>/i);
 });
 
@@ -160,6 +165,26 @@ test("publishes the complete Lecture 3 deck through the local viewer", async () 
   assert.match(viewerHtml, /new Blob\(buffers, \{ type: "application\/pdf" \}\)/);
   assert.match(viewerHtml, /atob\(encoded\)/);
   assert.equal(parts.filter((name) => /^lecture3\.part\.\d{2}\.b64$/.test(name)).length, 10);
+});
+
+test("publishes byte-identical Lecture 5 and 6 PDFs through their viewers", async () => {
+  const lectures = [
+    [5, 9, "fb122e4724d5dbf68447ef8b7647a7ce4c78d79696444db635db6903f26a32d3"],
+    [6, 12, "7a88b6cbeab9fb2693116b5d955d1abcc05471ce776404a9e9e3514cc37f9acb"],
+  ];
+  for (const [lecture, count, expectedHash] of lectures) {
+    for (const prefix of ["", "docs/", "public/"]) {
+      const viewer = await readFile(new URL(`../${prefix}lecture${lecture}.html`, import.meta.url), "utf8");
+      assert.match(viewer, new RegExp(`const partCount = ${count};`));
+      assert.match(viewer, new RegExp(`Lecture ${lecture} slides`));
+      const dir = new URL(`../${prefix}lecture${lecture}-parts-b64/`, import.meta.url);
+      const parts = (await readdir(dir)).filter(name => name.endsWith(".b64")).sort();
+      assert.equal(parts.length, count);
+      const data = Buffer.concat(await Promise.all(parts.map(async name => Buffer.from(await readFile(new URL(name, dir), "utf8"), "base64"))));
+      assert.equal(data.subarray(0, 5).toString(), "%PDF-");
+      assert.equal(createHash("sha256").update(data).digest("hex"), expectedHash);
+    }
+  }
 });
 
 test("structures the revised 27-meeting schedule", async () => {
