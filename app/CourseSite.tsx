@@ -139,6 +139,7 @@ function cleanWeekBody(body: string) {
     "Additional evidence cards",
     "Application readings",
     "Lecture Slides",
+    "Reference slides used in class",
     "Reading After Class",
     "Related Readings",
   ]);

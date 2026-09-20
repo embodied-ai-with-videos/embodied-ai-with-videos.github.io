@@ -67,6 +67,15 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 ### Lecture 4 — Reinforcement learning
 
+**Lecture Slides**
+
+- [Lecture 4 slides (PDF)](/lecture4.html)
+
+**Reference slides used in class**
+
+- [Imitation and Reinforcement Learning — Part II](https://antonilo.github.io/real_world_robot_learning_sp25/assets/pdfs/Lecture2-Imitation-And-RL.pdf)
+- [Imitation and Reinforcement Learning — Part III](https://antonilo.github.io/real_world_robot_learning_sp25/assets/pdfs/Lecture3-Imitation-And-RL.pdf)
+
 **Related Readings**
 
 - **[F]** Sutton and Barto, [Reinforcement Learning: An Introduction, 2nd ed.](http://incompleteideas.net/book/the-book-2nd.html), Chapters 3–6 and 13 selectively.
