@@ -129,6 +129,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 > Optical flow; segmentation and tracking; 3D scene flow, dynamic scenes, occlusion, and camera motion
 
+**Lecture Slides**
+
+- [Lecture 7 slides (PDF)](/lecture7.html)
+
 **Reading After Class**
 
 - **[P]** Thakkar et al., [Forecasting Motion in the Wild](https://arxiv.org/abs/2604.01015), 2026.

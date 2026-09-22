@@ -69,6 +69,7 @@ test("server-renders the complete course outline", async () => {
   }
   assert.match(html, /href="\/lecture5\.html"[^>]*>Lecture 5 slides \(PDF\)/);
   assert.match(html, /href="\/lecture6\.html"[^>]*>Lecture 6 slides \(PDF\)/);
+  assert.match(html, /href="\/lecture7\.html"[^>]*>Lecture 7 slides \(PDF\)/);
   assert.match(html, /Reading After Class/);
   assert.match(html, /Rational Imitation in Preverbal Infants/);
   assert.match(html, /TrackCraft3R: Repurposing Video Diffusion Transformers for Dense 3D Tracking/);
@@ -146,6 +147,7 @@ test("publishes the full site from the repository root for GitHub Pages", async 
   assert.match(rootHtml, /href="\.\/lecture4\.html"/);
   assert.match(rootHtml, /href="\.\/lecture5\.html"/);
   assert.match(rootHtml, /href="\.\/lecture6\.html"/);
+  assert.match(rootHtml, /href="\.\/lecture7\.html"/);
   assert.doesNotMatch(rootHtml, /<h1>embodied-ai-with-videos<\/h1>/i);
 });
 
@@ -173,11 +175,12 @@ test("publishes the complete Lecture 3 deck through the local viewer", async () 
   assert.equal(parts.filter((name) => /^lecture3\.part\.\d{2}\.b64$/.test(name)).length, 10);
 });
 
-test("publishes byte-identical Lecture 4, 5 and 6 PDFs through their viewers", async () => {
+test("publishes byte-identical Lecture 4, 5, 6 and 7 PDFs through their viewers", async () => {
   const lectures = [
     [4, 2, "11cb4205f4e6efb22ac538698c3ab9ffd5925fef3ebcfff68fc4f54eb844c417"],
     [5, 9, "fb122e4724d5dbf68447ef8b7647a7ce4c78d79696444db635db6903f26a32d3"],
     [6, 12, "7a88b6cbeab9fb2693116b5d955d1abcc05471ce776404a9e9e3514cc37f9acb"],
+    [7, 15, "5008277feca2d639f8f41aabdf70c12662b77b6ccaf1b8ec7a866e2d57c1225e"],
   ];
   for (const [lecture, count, expectedHash] of lectures) {
     for (const prefix of ["", "docs/", "public/"]) {
@@ -210,6 +213,7 @@ test("structures the revised 27-meeting schedule", async () => {
 
   const lecture7 = getLecture(7);
   assert.equal(lecture7.title, "Extracting Motion from Video");
+  assert.match(lecture7.body, /\[Lecture 7 slides \(PDF\)\]\(\/lecture7\.html\)/);
   assert.match(lecture7.body, /^> Optical flow; segmentation and tracking; 3D scene flow, dynamic scenes, occlusion, and camera motion$/m);
   assert.match(lecture7.body, /Track2Act: Predicting Point Tracks/);
   assert.match(lecture7.body, /RAFT-3D: Scene Flow Using Rigid-Motion Embeddings/);

@@ -71,6 +71,7 @@ for (const filename of [
   "lecture4.html",
   "lecture5.html",
   "lecture6.html",
+  "lecture7.html",
   "og.png",
   "university.shield.rgb.blue.png",
 ]) {
@@ -83,7 +84,7 @@ await cp(join(pagesDir, "lecture1-parts-b64"), rootLecture1PartsDir, { recursive
 await rm(rootLecture3PartsDir, { force: true, recursive: true });
 await cp(join(pagesDir, "lecture3-parts-b64"), rootLecture3PartsDir, { recursive: true });
 
-for (const lecture of [4, 5, 6]) {
+for (const lecture of [4, 5, 6, 7]) {
   const partsDir = `lecture${lecture}-parts-b64`;
   await cp(join(pagesDir, partsDir), join(root, partsDir), { recursive: true });
 }
