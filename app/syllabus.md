@@ -157,6 +157,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 > 3D human body reconstruction and generation; hands and objects in 3D; contact and interaction reconstruction
 
+**Lecture Slides**
+
+- [Lecture 8 slides (PDF)](/lecture8.html)
+
 **Reading After Class**
 
 - **[P]** Wang et al., [EgoInfinity: A Web-Scale 4D Hand-Object Interaction Data Engine for Any-View Robot Retargeting and Video-to-Action Robot Learning](https://arxiv.org/abs/2606.17385), 2026 preprint.
@@ -192,6 +196,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 ### Lecture 11 — Video Generation
 
 > Video generation: diffusion, transformers, and latent video models
+
+**Lecture Slides**
+
+- [Lecture 11 slides (PDF)](/lecture11.html)
 
 **Reading After Class**
 
