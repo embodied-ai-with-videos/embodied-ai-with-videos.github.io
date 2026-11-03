@@ -224,6 +224,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 > World models for planning and control
 
+**Lecture Slides**
+
+- [Lecture 13 slides (PDF)](/lecture13.pdf)
+
 **Reading After Class**
 
 - **[R]** Jang et al., [DreamGen: Unlocking Generalization in Robot Learning through Video World Models](https://proceedings.mlr.press/v305/jang25a.html), CoRL 2025.

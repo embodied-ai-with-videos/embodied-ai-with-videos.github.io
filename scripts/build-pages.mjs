@@ -74,6 +74,7 @@ for (const filename of [
   "lecture7.html",
   "lecture8.html",
   "lecture11.html",
+  "lecture13.pdf",
   "og.png",
   "university.shield.rgb.blue.png",
 ]) {

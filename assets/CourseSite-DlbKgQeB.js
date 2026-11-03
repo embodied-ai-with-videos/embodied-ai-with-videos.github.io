@@ -67,6 +67,15 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 ### Lecture 4 — Reinforcement learning
 
+**Lecture Slides**
+
+- [Lecture 4 slides (PDF)](/lecture4.html)
+
+**Reference slides used in class**
+
+- [Imitation and Reinforcement Learning — Part II](https://antonilo.github.io/real_world_robot_learning_sp25/assets/pdfs/Lecture2-Imitation-And-RL.pdf)
+- [Imitation and Reinforcement Learning — Part III](https://antonilo.github.io/real_world_robot_learning_sp25/assets/pdfs/Lecture3-Imitation-And-RL.pdf)
+
 **Related Readings**
 
 - **[F]** Sutton and Barto, [Reinforcement Learning: An Introduction, 2nd ed.](http://incompleteideas.net/book/the-book-2nd.html), Chapters 3–6 and 13 selectively.
@@ -81,6 +90,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 ### Lecture 5 — The nature of Web Videos and Challenges in Using them
 
+**Lecture Slides**
+
+- [Lecture 5 slides (PDF)](/lecture5.html)
+
 **Related Readings**
 
 - **[R]** Grauman et al., [Ego4D: Around the World in 3,000 Hours of Egocentric Video](https://openaccess.thecvf.com/content/CVPR2022/html/Grauman_Ego4D_Around_the_World_in_3000_Hours_of_Egocentric_Video_CVPR_2022_paper.html), CVPR 2022.
@@ -90,6 +103,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 - **[P]** Chen et al., [Action100M: A Large-scale Video Action Dataset](https://arxiv.org/abs/2601.10592), 2026.
 
 ### Lecture 6 — Behavioral Priors, self-supervised video representation learning, active exploration
+
+**Lecture Slides**
+
+- [Lecture 6 slides (PDF)](/lecture6.html)
 
 **Reading After Class**
 
@@ -111,6 +128,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 ### Lecture 7 — Extracting Motion from Video
 
 > Optical flow; segmentation and tracking; 3D scene flow, dynamic scenes, occlusion, and camera motion
+
+**Lecture Slides**
+
+- [Lecture 7 slides (PDF)](/lecture7.html)
 
 **Reading After Class**
 
@@ -135,6 +156,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 ### Lecture 8 — Reconstruction of Bodies, Hands, and Objects
 
 > 3D human body reconstruction and generation; hands and objects in 3D; contact and interaction reconstruction
+
+**Lecture Slides**
+
+- [Lecture 8 slides (PDF)](/lecture8.html)
 
 **Reading After Class**
 
@@ -172,6 +197,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 > Video generation: diffusion, transformers, and latent video models
 
+**Lecture Slides**
+
+- [Lecture 11 slides (PDF)](/lecture11.html)
+
 **Reading After Class**
 
 - **[R]** Patel et al., [Robotic Manipulation by Imitating Generated Videos Without Physical Demonstrations](https://arxiv.org/abs/2507.00990), ICLR 2026.
@@ -194,6 +223,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 ### Lecture 13 — World Models
 
 > World models for planning and control
+
+**Lecture Slides**
+
+- [Lecture 13 slides (PDF)](/lecture13.pdf)
 
 **Reading After Class**
 
@@ -398,8 +431,8 @@ Use a 150–250 word response with four labeled sentences or bullets:
 
 For seminar presentations, add a one-slide reproducibility card: data availability, code/checkpoints, compute/hardware, number of real-world trials, variance/confidence intervals, and known failure cases.
 `,n=e(),r=`How can an intelligent agent learn physical skills from internet-scale video? This course connects observational learning for robotics with the latest advances in machine learning to extract and predict useful cues from video datasets.`,i=[[`Sep 1`,`Sep 3`],[`Sep 8`,`Sep 10`],[`Sep 15`,`Sep 17`],[`Sep 22`,`Sep 24`],[`Sep 29`,`Oct 1`],[`Oct 6`,`Oct 8`],[`Oct 13`,`Oct 15`],[`Oct 20`,`Oct 27`],[`Oct 29`,`Nov 3`],[`Nov 5`,`Nov 10`],[`Nov 12`,`Nov 17`],[`Nov 19`,`Dec 1`],[`Dec 3`,`Dec 8`],[`Dec 10`]],a=e=>e.replace(/&/g,`&amp;`).replace(/</g,`&lt;`).replace(/>/g,`&gt;`);function o(e){return a(e).replace(/\[([^\]]+)\]\(((?:https?:\/\/|\/)(?:[^()]|\([^()]*\))+)\)/g,`<a href="$2" target="_blank" rel="noreferrer">$1<span aria-hidden="true">↗</span></a>`).replace(/\*\*([^*]+)\*\*/g,`<strong>$1</strong>`).replace(/`([^`]+)`/g,`<code>$1</code>`).replace(/(^|\s)\*([^*]+)\*/g,`$1<em>$2</em>`)}function s(e){let t=e.trim().split(`
-`),n=[],r=[],i=null,a=()=>{r.length&&n.push(`<p>${o(r.join(` `))}</p>`),r=[]},s=()=>{i&&n.push(`</${i}>`),i=null};return t.forEach(e=>{let t=e.match(/^(#{2,4})\s+(.+)$/),c=e.match(/^[-*]\s+(.+)$/),l=e.match(/^\d+\.\s+(.+)$/);if(!e.trim())a(),s();else if(e.trim()===`---`)a(),s();else if(t){a(),s();let e=Math.min(4,t[1].length+1);n.push(`<h${e}>${o(t[2])}</h${e}>`)}else if(e.startsWith(`>`))a(),s(),n.push(`<blockquote>${o(e.replace(/^>\s?/,``))}</blockquote>`);else if(c||l){a();let e=c?`ul`:`ol`;i!==e&&(s(),i=e,n.push(`<${i}>`)),n.push(`<li>${o((c||l)[1])}</li>`)}else s(),r.push(e.trim())}),a(),s(),n.join(``)}function c(e){let t=[...e.matchAll(/^##\s+(.+)$/gm)];return t.map((n,r)=>({title:n[1].trim(),body:e.slice(n.index+n[0].length,t[r+1]?.index??e.length).trim()}))}function l(e){let t=[...e.matchAll(/^### Lecture (\d+)\s+[—-]\s+(.+)$/gm)];return t.map((n,r)=>{let i=e.slice(n.index+n[0].length,t[r+1]?.index??e.length).trim(),a=i.match(/^>\s+(.+)$/m)?.[1]?.trim();return{number:Number(n[1]),title:n[2].trim(),description:a,body:i.replace(/^>\s+.+\n?/,``).trim()}})}function u(e){let t=new Set([`Core`,`Anchor`,`Background / lecture preparation`,`Background / comparison papers`,`Background — selected sections`,`Frontier / comparison papers`,`Frontier / dataset papers`,`Student presentation pool`,`Data companion — skim before class`,`Evaluation companion — short required critique`,`Comparison papers`,`Required debate pair`,`Additional evidence cards`,`Application readings`,`Lecture Slides`,`Reading After Class`,`Related Readings`]);return e.split(`
+`),n=[],r=[],i=null,a=()=>{r.length&&n.push(`<p>${o(r.join(` `))}</p>`),r=[]},s=()=>{i&&n.push(`</${i}>`),i=null};return t.forEach(e=>{let t=e.match(/^(#{2,4})\s+(.+)$/),c=e.match(/^[-*]\s+(.+)$/),l=e.match(/^\d+\.\s+(.+)$/);if(!e.trim())a(),s();else if(e.trim()===`---`)a(),s();else if(t){a(),s();let e=Math.min(4,t[1].length+1);n.push(`<h${e}>${o(t[2])}</h${e}>`)}else if(e.startsWith(`>`))a(),s(),n.push(`<blockquote>${o(e.replace(/^>\s?/,``))}</blockquote>`);else if(c||l){a();let e=c?`ul`:`ol`;i!==e&&(s(),i=e,n.push(`<${i}>`)),n.push(`<li>${o((c||l)[1])}</li>`)}else s(),r.push(e.trim())}),a(),s(),n.join(``)}function c(e){let t=[...e.matchAll(/^##\s+(.+)$/gm)];return t.map((n,r)=>({title:n[1].trim(),body:e.slice(n.index+n[0].length,t[r+1]?.index??e.length).trim()}))}function l(e){let t=[...e.matchAll(/^### Lecture (\d+)\s+[—-]\s+(.+)$/gm)];return t.map((n,r)=>{let i=e.slice(n.index+n[0].length,t[r+1]?.index??e.length).trim(),a=i.match(/^>\s+(.+)$/m)?.[1]?.trim();return{number:Number(n[1]),title:n[2].trim(),description:a,body:i.replace(/^>\s+.+\n?/,``).trim()}})}function u(e){let t=new Set([`Core`,`Anchor`,`Background / lecture preparation`,`Background / comparison papers`,`Background — selected sections`,`Frontier / comparison papers`,`Frontier / dataset papers`,`Student presentation pool`,`Data companion — skim before class`,`Evaluation companion — short required critique`,`Comparison papers`,`Required debate pair`,`Additional evidence cards`,`Application readings`,`Lecture Slides`,`Reference slides used in class`,`Reading After Class`,`Related Readings`]);return e.split(`
 `).filter(e=>{let n=e.trim();if(!n||/^###\s+/.test(n)||/^-\s+/.test(n))return!0;let r=n.match(/^\*\*([^*]+)\*\*$/);return!!(r&&t.has(r[1]))}).map(e=>e.replace(/((?:19|20)\d{2}(?:\s+preprint)?)(?:\.\s+|\s+—\s+).+$/,`$1.`)).join(`
 `).replace(/\*\*\[[FRP]\]\*\*\s*/g,``).replace(/^\*\*Core\*\*$/gm,`**Read before class**`).replace(/^\*\*Anchor\*\*$/gm,`**Anchor reading**`).replace(/^\*\*Background \/ lecture preparation\*\*$/gm,`**Additional context**`).replace(/^\*\*Background \/ comparison papers\*\*$/gm,`**Additional context**`).replace(/^\*\*Background \/ comparison papers\*\*$/gm,`**Additional context**`).replace(/^\*\*Background — selected sections\*\*$/gm,`**Selected background**`).replace(/^\*\*Frontier \/ comparison papers\*\*$/gm,`**Further reading**`).replace(/^\*\*Frontier \/ dataset papers\*\*$/gm,`**Datasets and further reading**`).replace(/^\*\*Student presentation pool\*\*$/gm,`**Presentation choices**`).replace(/^\*\*Data companion — skim before class\*\*$/gm,`**Skim before class**`).replace(/^\*\*Evaluation companion — short required critique\*\*$/gm,`**Short critique**`).replace(/^\*\*Comparison papers\*\*$/gm,`**Further reading**`).replace(/^\*\*Required debate pair\*\*$/gm,`**Debate readings**`).replace(/^\*\*Additional evidence cards\*\*$/gm,`**Additional evidence**`).replace(/\n{3,}/g,`
 
-`).trim()}function d(){let e=c(t),a=e.filter(e=>e.title.startsWith(`Week `)),o=a.slice(0,3),d=a.slice(3).flatMap(e=>l(e.body)),f=i.flat(),p=e.find(e=>e.title===`Grading`),m=e.find(e=>e.title===`Expectations`);return(0,n.jsxs)(`main`,{id:`top`,children:[(0,n.jsx)(`nav`,{className:`site-nav`,"aria-label":`Primary navigation`,children:(0,n.jsxs)(`a`,{className:`site-name`,href:`#top`,children:[(0,n.jsx)(`img`,{src:`/university.shield.rgb.blue.png`,alt:``,width:`42`,height:`42`}),(0,n.jsx)(`span`,{children:`The Johns Hopkins University`})]})}),(0,n.jsxs)(`header`,{className:`course-intro`,id:`course`,children:[(0,n.jsx)(`p`,{className:`course-code`,children:`EN.601.460 / 660 · Fall 2026`}),(0,n.jsx)(`p`,{className:`course-logistics`,children:`📍 Hodson Hall 305 · 🕒 Tuesdays and Thursdays, 4:30–5:45 PM`}),(0,n.jsx)(`h1`,{children:`Embodied AI with Web-Scale Video Data`}),(0,n.jsx)(`p`,{className:`course-description`,children:r}),(0,n.jsxs)(`div`,{className:`course-team`,"aria-label":`Course team`,children:[(0,n.jsxs)(`div`,{className:`lead-instructor`,children:[(0,n.jsx)(`span`,{children:`Instructor`}),(0,n.jsx)(`strong`,{children:(0,n.jsx)(`a`,{href:`https://homangab.github.io/`,target:`_blank`,rel:`noreferrer`,children:`Homanga Bharadhwaj`})}),(0,n.jsxs)(`p`,{children:[(0,n.jsx)(`b`,{children:`Assistant Professor`}),(0,n.jsx)(`br`,{}),`Department of Computer Science`,(0,n.jsx)(`br`,{}),`Data Science and AI Institute`,(0,n.jsx)(`br`,{}),`Laboratory of Computational Sensing and Robotics`]})]}),(0,n.jsxs)(`div`,{className:`course-assistants`,children:[(0,n.jsxs)(`div`,{children:[(0,n.jsx)(`span`,{children:`Teaching Assistant`}),(0,n.jsx)(`strong`,{children:(0,n.jsx)(`a`,{href:`https://kartik-3004.github.io/portfolio/`,target:`_blank`,rel:`noreferrer`,children:`Kartik Narayan`})}),(0,n.jsx)(`p`,{children:`PhD student in Computer Science`})]})]})]})]}),(0,n.jsx)(`section`,{className:`weeks`,id:`weeks`,children:(0,n.jsxs)(`div`,{className:`week-list`,children:[o.map((e,t)=>{let r=e.title.match(/^Week \d+\s+[—-]\s+(.+)$/)?.[1];return(0,n.jsxs)(`article`,{className:`week`,children:[(0,n.jsxs)(`div`,{className:`week-meta`,children:[(0,n.jsxs)(`div`,{className:`week-label`,children:[`Lectures `,t*2+1,`–`,t*2+2]}),(0,n.jsx)(`div`,{className:`week-dates`,"aria-label":`Class dates: ${i[t].join(` and `)}`,children:i[t].map(e=>(0,n.jsx)(`span`,{className:`week-date`,children:e},e))})]}),(0,n.jsxs)(`div`,{className:`week-main`,children:[r?(0,n.jsx)(`h3`,{children:r}):null,(0,n.jsx)(`div`,{className:`week-content`,dangerouslySetInnerHTML:{__html:s(u(e.body))}})]})]},e.title)}),d.map(e=>{let t=f[e.number-1];return(0,n.jsxs)(`article`,{className:`week lecture-row`,children:[(0,n.jsxs)(`div`,{className:`week-meta`,children:[(0,n.jsxs)(`div`,{className:`week-label`,children:[`Lecture `,e.number]}),(0,n.jsx)(`div`,{className:`week-dates`,"aria-label":`Class date: ${t}`,children:(0,n.jsx)(`span`,{className:`week-date`,children:t})})]}),(0,n.jsxs)(`div`,{className:`week-main`,children:[(0,n.jsx)(`h3`,{children:e.title}),e.description?(0,n.jsx)(`p`,{className:`lecture-description`,children:e.description}):null,e.body?(0,n.jsx)(`div`,{className:`week-content`,dangerouslySetInnerHTML:{__html:s(u(e.body))}}):null]})]},`lecture-${e.number}`)})]})}),p?(0,n.jsx)(`section`,{className:`grading`,id:`grading`,"aria-labelledby":`grading-title`,children:(0,n.jsxs)(`div`,{className:`grading-inner`,children:[(0,n.jsx)(`div`,{className:`week-label`,children:`Assessment`}),(0,n.jsxs)(`div`,{className:`grading-main`,children:[(0,n.jsx)(`h2`,{id:`grading-title`,children:`Grading`}),(0,n.jsx)(`div`,{className:`grading-content`,dangerouslySetInnerHTML:{__html:s(p.body)}})]})]})}):null,m?(0,n.jsx)(`section`,{className:`expectations`,id:`expectations`,"aria-labelledby":`expectations-title`,children:(0,n.jsxs)(`div`,{className:`expectations-inner`,children:[(0,n.jsx)(`h2`,{className:`week-label`,id:`expectations-title`,children:`Expectations`}),(0,n.jsx)(`div`,{className:`expectations-content`,dangerouslySetInnerHTML:{__html:s(m.body)}})]})}):null,(0,n.jsxs)(`footer`,{children:[(0,n.jsx)(`p`,{children:`Johns Hopkins University · Department of Computer Science`}),(0,n.jsx)(`a`,{href:`#top`,children:`Back to top ↑`})]})]})}export{d as default};
+`).trim()}function d(){let e=c(t),a=e.filter(e=>e.title.startsWith(`Week `)),o=a.slice(0,3),d=a.slice(3).flatMap(e=>l(e.body)),f=i.flat(),p=e.find(e=>e.title===`Grading`),m=e.find(e=>e.title===`Expectations`);return(0,n.jsxs)(`main`,{id:`top`,children:[(0,n.jsx)(`nav`,{className:`site-nav`,"aria-label":`Primary navigation`,children:(0,n.jsxs)(`a`,{className:`site-name`,href:`#top`,children:[(0,n.jsx)(`img`,{src:`/university.shield.rgb.blue.png`,alt:``,width:`42`,height:`42`}),(0,n.jsx)(`span`,{children:`The Johns Hopkins University`})]})}),(0,n.jsxs)(`header`,{className:`course-intro`,id:`course`,children:[(0,n.jsx)(`p`,{className:`course-code`,children:`EN.601.460 / 660 · Fall 2026`}),(0,n.jsx)(`p`,{className:`course-logistics`,children:`📍 Hodson Hall 305 · 🕒 Tuesdays and Thursdays, 4:30–5:45 PM`}),(0,n.jsx)(`h1`,{children:`Embodied AI with Web-Scale Video Data`}),(0,n.jsx)(`p`,{className:`course-description`,children:r}),(0,n.jsxs)(`div`,{className:`course-team`,"aria-label":`Course team`,children:[(0,n.jsxs)(`div`,{className:`lead-instructor`,children:[(0,n.jsx)(`span`,{children:`Instructor`}),(0,n.jsx)(`strong`,{children:(0,n.jsx)(`a`,{href:`https://homangab.github.io/`,target:`_blank`,rel:`noreferrer`,children:`Homanga Bharadhwaj`})}),(0,n.jsxs)(`p`,{children:[(0,n.jsx)(`b`,{children:`Assistant Professor`}),(0,n.jsx)(`br`,{}),`Department of Computer Science`,(0,n.jsx)(`br`,{}),`Data Science and AI Institute`,(0,n.jsx)(`br`,{}),`Laboratory of Computational Sensing and Robotics`]})]}),(0,n.jsx)(`div`,{className:`course-assistants`,children:(0,n.jsxs)(`div`,{children:[(0,n.jsx)(`span`,{children:`Teaching Assistant`}),(0,n.jsx)(`strong`,{children:(0,n.jsx)(`a`,{href:`https://kartik-3004.github.io/portfolio/`,target:`_blank`,rel:`noreferrer`,children:`Kartik Narayan`})}),(0,n.jsx)(`p`,{children:`PhD student in Computer Science`})]})})]})]}),(0,n.jsx)(`section`,{className:`weeks`,id:`weeks`,children:(0,n.jsxs)(`div`,{className:`week-list`,children:[o.map((e,t)=>{let r=e.title.match(/^Week \d+\s+[—-]\s+(.+)$/)?.[1];return(0,n.jsxs)(`article`,{className:`week`,children:[(0,n.jsxs)(`div`,{className:`week-meta`,children:[(0,n.jsxs)(`div`,{className:`week-label`,children:[`Lectures `,t*2+1,`–`,t*2+2]}),(0,n.jsx)(`div`,{className:`week-dates`,"aria-label":`Class dates: ${i[t].join(` and `)}`,children:i[t].map(e=>(0,n.jsx)(`span`,{className:`week-date`,children:e},e))})]}),(0,n.jsxs)(`div`,{className:`week-main`,children:[r?(0,n.jsx)(`h3`,{children:r}):null,(0,n.jsx)(`div`,{className:`week-content`,dangerouslySetInnerHTML:{__html:s(u(e.body))}})]})]},e.title)}),d.map(e=>{let t=f[e.number-1];return(0,n.jsxs)(`article`,{className:`week lecture-row`,children:[(0,n.jsxs)(`div`,{className:`week-meta`,children:[(0,n.jsxs)(`div`,{className:`week-label`,children:[`Lecture `,e.number]}),(0,n.jsx)(`div`,{className:`week-dates`,"aria-label":`Class date: ${t}`,children:(0,n.jsx)(`span`,{className:`week-date`,children:t})})]}),(0,n.jsxs)(`div`,{className:`week-main`,children:[(0,n.jsx)(`h3`,{children:e.title}),e.description?(0,n.jsx)(`p`,{className:`lecture-description`,children:e.description}):null,e.body?(0,n.jsx)(`div`,{className:`week-content`,dangerouslySetInnerHTML:{__html:s(u(e.body))}}):null]})]},`lecture-${e.number}`)})]})}),p?(0,n.jsx)(`section`,{className:`grading`,id:`grading`,"aria-labelledby":`grading-title`,children:(0,n.jsxs)(`div`,{className:`grading-inner`,children:[(0,n.jsx)(`div`,{className:`week-label`,children:`Assessment`}),(0,n.jsxs)(`div`,{className:`grading-main`,children:[(0,n.jsx)(`h2`,{id:`grading-title`,children:`Grading`}),(0,n.jsx)(`div`,{className:`grading-content`,dangerouslySetInnerHTML:{__html:s(p.body)}})]})]})}):null,m?(0,n.jsx)(`section`,{className:`expectations`,id:`expectations`,"aria-labelledby":`expectations-title`,children:(0,n.jsxs)(`div`,{className:`expectations-inner`,children:[(0,n.jsx)(`h2`,{className:`week-label`,id:`expectations-title`,children:`Expectations`}),(0,n.jsx)(`div`,{className:`expectations-content`,dangerouslySetInnerHTML:{__html:s(m.body)}})]})}):null,(0,n.jsxs)(`footer`,{children:[(0,n.jsx)(`p`,{children:`Johns Hopkins University · Department of Computer Science`}),(0,n.jsx)(`a`,{href:`#top`,children:`Back to top ↑`})]})]})}export{d as default};

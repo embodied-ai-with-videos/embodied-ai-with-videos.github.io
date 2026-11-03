@@ -11,7 +11,7 @@
     "name": "rolldown-runtime"
   },
   "app/CourseSite.tsx": {
-    "file": "assets/CourseSite-DPA9oiHg.js",
+    "file": "assets/CourseSite-DlbKgQeB.js",
     "name": "CourseSite",
     "src": "app/CourseSite.tsx",
     "isDynamicEntry": true,
@@ -20,7 +20,7 @@
     ]
   },
   "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6e29d3c1e221dce46ffd79bec19b99c1/node_modules/vinext/dist/shims/layout-segment-context.js": {
-    "file": "assets/layout-segment-context-DYzb-37k.js",
+    "file": "assets/layout-segment-context-CTMYWJu2.js",
     "name": "layout-segment-context",
     "src": "node_modules/.pnpm/vinext@0.0.50_@vitejs+plugin-react@6.0.2_vite@8.0.13_@types+node@22.19.19_esbuild@0.28._6e29d3c1e221dce46ffd79bec19b99c1/node_modules/vinext/dist/shims/layout-segment-context.js",
     "isDynamicEntry": true,
@@ -31,7 +31,7 @@
     ]
   },
   "virtual:vinext-app-browser-entry": {
-    "file": "assets/index--mAtEGo9.js",
+    "file": "assets/index-CjHcuNgu.js",
     "name": "index",
     "src": "virtual:vinext-app-browser-entry",
     "isEntry": true,
