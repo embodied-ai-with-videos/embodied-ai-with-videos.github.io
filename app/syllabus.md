@@ -259,6 +259,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 
 > Vision-language models for manipulation and navigation
 
+**Lecture Slides**
+
+- [Lecture 15 slides (PDF)](/lecture15.pdf)
+
 **Reading After Class**
 
 - **[R]** Ahn et al., [Do As I Can, Not As I Say: Grounding Language in Robotic Affordances](https://say-can.github.io/), CoRL 2022.
@@ -286,6 +290,10 @@ For undergraduate students, require the core paper's abstract, introduction, key
 ### Lecture 17 — One/Few-Shot Human Imitation
 
 > Robot learning from one/few-shot human imitation and Real2Sim2Real
+
+**Lecture Slides**
+
+- [Lecture 17 slides (PDF)](/lecture17.pdf)
 
 **Reading After Class**
 
